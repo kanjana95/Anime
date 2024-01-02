@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+.box1{
+    height:400px;
+    width: 400px;
+    background-color: blueviolet;
+    border:2px solid red;
+    font-size: 30px;
+    margin: 15px;
+    transition: all 3s;
+     /* transform:skewY(20deg); */
+    cursor: pointer;
+    /* transform:skewX(30deg); */
+}
+  .box1:hover{
+background-color: aquamarine;
+transform:skewY(30deg);
+} 
+.box2{
+    height:400px;
+    width: 400px;
+    background-color: rgb(36, 33, 39);
+    border:2px solid red;
+    font-size: 30px;
+    margin: 15px;
+    transition: all 4s;
+    /* transform: translate(rotate 360deg); */
+    /* transform: rotate(360deg); */
+}
+.box2:hover{
+    background-color: aquamarine;
+    transform: rotate(360deg);
+    
+    } 
+.box3{
+    height:400px;
+    width: 400px;
+    /* background-color: rgb(32, 209, 209); */
+    /* background-image:url(img/block\ lady.jpeg);
+    background-repeat: no-repeat; */
+    border:2px solid red;
+    font-size: 30px;
+    margin: 15px;
+    transition: all 4s;
+    /* transform: scale(-2,-2); */
+}
+.box3:hover{
+    background-color: aquamarine;
+    /* transform: rotate(360deg); */
+    transform: scale(-1,-1);
+    } 
+
+    img{
+        height: 400px;
+        width:400px;
+    }
+
+    @media only screen and (min-width:300px) and (max-width:500px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: brown;
+        }
+        
+    }
+    @media only screen and (min-width:500px) and (max-width:800px){
+        .container{
+            display:flex;
+            flex-direction:column;
+            background-color: black;
+        }
+        .box1:hover{
+            transform: scale(-2);
+        }
+        
+    }
